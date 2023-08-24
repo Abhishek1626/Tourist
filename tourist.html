@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    @font-face{
+        font-family: "Dongle-light";
+        src: url("Dongle/Dongle-Light.ttf");
+    }
+    @font-face{
+        font-family: "Dongle-regular";
+        src: url("Dongle/Dongle-Regular.ttf");
+    }
+    @font-face{
+        font-family: "Dongle-bold";
+        src: url("Dongle/Dongle-Bold.ttf");
+    }
+    header {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        padding: 50px;
+        background-color: #f3eded ; /* Change to blue color */
+        box-shadow: 0 0 10px #f704bef3;
+        text-align: center;
+        font-family: "Dongle-bold";
+        color: #0b0504;
+        font-size: 3vw;
+    }
+    
+    
+    .hill{
+        position: relative;
+        height: 600px;
+        overflow: hidden;
+    }
+    .hill-image img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .hill-content{
+        position: absolute;
+        top: 50%;
+        left: 65%;
+        transform: translate(-50%,-50%);
+        width: 30%;
+        color: #fff;
+    }
+    .hill-content h1{
+        font-family: "Dongle-bold";
+        font-size: 4rem;
+    }
+    .hill-content p{
+        font-family: "Dongle-regular";
+        font-size: 1.8rem;
+    }
+    .destinations{
+        font-size: 2.4rem;
+        font-family: "Dongle-bold";
+        margin-bottom: 40px;
+        margin: 40px 80px;
+        text-align: center;
+    }
+    .destinations h2{
+        margin-bottom: 40px;
+    }
+    .destination-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+    }
+    .destination-item img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+    .destination-item{
+        text-align: left;
+    }
+    .destination-item h3{
+        font-size: 2rem;
+    }
+    .destination-item p{
+        font-size: 1.4rem;
+        line-height: 1;
+        font-family: "Dongle-regular";
+    }
+    .about{
+         text-align: center;
+         padding: 100px;
+    }
+    .about h3{
+        font-family: "Dongle-bold";
+        font-size: 3rem;
+    }
+    .about p{
+        font-family: "Dongle-regular";
+        font-size: 1.4rem;
+        line-height: 1;
+        margin-bottom: 40px;
+    }
+    .team-members{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .team-member img {
+        display: block;
+        margin: 1000%;
+        width: 300px;
+        height: 400px;
+    }
+    .team-member h4{
+        font-family: "Dongle-bold";
+        font-size: 2rem;
+    }
+    .aboutme{
+        background-color: #788339;
+    }
+    .aboutweb{
+        background-color: hsl(338, 91%, 49%);
+    }
+    
+</style>
+
+<body>
+    <header>
+        
+            <!-- <div class="logo"> -->
+            
+            <h1>WELCOME TO HIMACHAL PRADESH</h1>
+        <!-- </div> -->
+        
+    </header>
+    <main>
+        <section class="hill">
+            <div class="hill image">
+                </a><img src="https://3.bp.blogspot.com/-MeNgh41dY7A/WvA_hApNdeI/AAAAAAAAAEA/N5Qun373hIQiq04MjtGe9KEvK5ySdHJKQCLcBGAs/s1600/Himachal%2BPradesh%2BTourism.jpg" alt="" height="500"
+                   width="1500" image />
+
+            </div>
+            <!-- <div class="hill-content">
+                <p>Travel Blog</p>
+                <h1>Going Places</h1>
+                <p>I haven’t been everywhere, but it’s on my list</p>
+
+            </div> -->
+        </section>
+        <!--Destinations-->
+        <section class="destinations">
+            <h2>Popular destinations</h2>
+            <div class="destination-grid">
+                <div class="destination-item">
+                    <img
+                        src="https://www.thedivineindia.com/img/jatoli-shiva-mandir.jpg"
+                        alt="Temple">
+                    <h3>Temples</h3>
+                    <p>
+                        Deemed as the abode of God, Himachal Pradesh is indeed a divine land for all the devotees. Known as the land of temples, it is visited by people from across the globe. From Hindu temples to Jain temples to mosques, the landscape of Himachal Pradesh is dotted with multiple shrines. The diverse and colorful landscape of Himachal Pradesh is filled with houses of Gods and Goddesses dedicated to different religions.Himachal Pradesh can be described as the land of pilgrimages, mystical customs, and rituals. The land of vivid custom is blessed with supernatural powers which attract tourist from across the world.                  
+                    </p>
+
+                </div>
+
+                <div class="destination-item">
+                    <img
+                        src="https://lockyourtrip.com/blogs/wp-content/uploads/2022/03/SOME-OF-THE-MOST-POPULAR-WILDLIFE-SANCTURIES-IN-HIMACHAL-PRADESH.webp"
+                        alt="Zoo & Parks">
+                    <h3>Zoo & Parks</h3>
+                    <p>
+                        Himachal Pradesh has a wide variety of flora and fauna. They have two major natural parks and two sanctuaries, marking themselves as the largest number in the Himalayan regions. It has around 359 animal species and 1200 birds approximately. Snow leopard is known as their state animal and one also gets to see musk deer and ghoral. It offers an endless quest for worldwide tourists, trekkers and wildlife enthusiasts.Zoos and aviaries have contributed a lot in creating awareness about the Himalayan animals and they are located at vantage points.
+                    </p>
+
+                </div>
+
+                <div class="destination-item">
+                    <img src="https://www.holidify.com/images/cmsuploads/compressed/1024px-Parvati_Valley_river_kasol_20190618205602.jpg" alt="">
+                    <h3>Rivers & Mountains</h3>
+                    <p>
+                        Himachal Pradesh provides water to both the Indus and Ganges basins. The drainage systems of the region are the Chenab, the Ravi, the Beas, the Satluj and the Yamuna. These rivers are perennial and are fed by snow and rainfall. They are protected by an extensive cover of natural vegetation.Himachal Pradesh provides water to both the Indus and Ganges basins. The drainage systems of the region are the Chenab, the Ravi, the Beas, the Satluj and the Yamuna. These rivers are perennial and are fed by snow and rainfall. They are protected by an extensive cover of natural vegetation.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="destinations">
+            <h2>Best Hotel's</h2>
+            <div class="destination-grid">
+                <div class="destination-item">
+                    <img
+                        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/2e/71/a8/the-oberoi-cecil-lobby.jpg?w=700&h=-1&s=1"
+                        alt="hotel">
+                    <h3> The Oberoi Cecil, Shimla </h3>
+                    <p>
+                        The hotel is located in Shimla, the gateway to the majestic Himalayas. Downtown Hotel with Colonial styling, 1 km from Shimla Station & 22 km from Jubalhatti-Shimla Airport. The Hotel is situated at the quite end of the famous Mall and is an ideal base from which to discover the unique beauty of the spectacular Himalayan ranges, Cedar forests and ancient monasteries.
+                    </p>
+
+                </div>
+
+                <div class="destination-item">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/247329200.jpg?k=7780305614f3a684440b73327f2409a1bc8b572981280f19b1d3e93f0c3c6a08&o=&hp=1"
+                        alt="hotel">
+                    <h3>Hyatt Regency Dharamshala</h3>
+                    <p>
+                        Hyatt Regency Dharamshala Resort, an upper-upscale resort spread across 6.5 acres, is situated in the profound depths of the Dhauladhar mountain ranges of the Outer Himalayas. It is a rare class of resort that manages to be picturesquely ideal for family, solo and romantic getaways. There is something unique for everyone! The region is very popular amongst explorers, followers and students of Buddhism.
+
+                    </p>
+
+                </div>
+
+                <div class="destination-item">
+                    <img
+                        src="https://q-xx.bstatic.com/xdata/images/hotel/max500/176563512.jpg?k=d63946d83d07da1aa8c8493ce34f060a9534d3ee3c521552b9dea12085a9537a&o="
+                        alt="hotel">
+                    <h3> Taj Theog Resort & Spa</h3>
+                    <p>
+                        Taj Theog Hill stations are always earned, as they have been right since the good old school summers. In Himachal Pradesh, otherwise known as Devbhumi, the Land of the Gods, a beautiful hill state in northern India framed by the western Himalayas, hill stations are benchmarks. And on the national highway No 5, often a photographer’s muse. As you leave Shimla behind, the capital city of Himachal
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="destinations">
+            <h2>Adventure Sports In Himachal Pradesh</h2>
+            <div class="destination-grid">
+                <div class="destination-item">
+                    <img
+                        src="https://aquaterra.in/wp-content/uploads/2019/10/Brahmaputra-River-Rafting-Assam-31.jpg"
+                        alt="River rafting">
+                    <h3> River Rafting</h3>
+                    <p>
+                        Glacial rivers surrounding Himachal graciously while making it an ideal place for a multitude of water sports such as rowing, river rafting, canoeing, and water skiing, and so on. This is one among several of the best adventure sports in Himachal Pradesh that has been popular since ages, however in this white water; it offers a thrill that is beyond imaginable. While shooting through rough rapids where you are surrounded by tall pine forests, snow capped peaks, and blooming rhododendrons, adventure enthusiasts are going to have a memorable experience.
+                    </p>
+
+                </div>
+
+                <div class="destination-item">
+                    <img src="https://images.pexels.com/photos/2433353/pexels-photo-2433353.jpeg?cs=srgb&dl=pexels-melvin-wahlin-2433353.jpg&fm=jpg">
+                    <h3>Ice Skiing</h3>
+                    <p>
+                        Skiing in Himachal is one among other famous adventure sports, drawing tourist sand adventure seekers to the state of Himachal Pradesh. There are two kinds of skiing performed here, one being Alpine kin and the other being Nordic kind. The Alpine kind involves skiing down steeply inclined slopes while the Nordic type is a bit more challenging and comprises jumping and cross country skiing. The Slopes of the Himalayas, including Pir Panjal, Shivalik are ideal for performing this sport. The best time to practice the sport is winters, especially mid December to February. Skiing enthusiasts are sure to satiate themselves and find what they are looking for.
+
+                    </p>
+
+                </div>
+
+                <div class="destination-item">
+                    <img src="https://www.engelberg.ch/fileadmin/_processed_/b/1/csm_Gleitschirm_1_1920x1080_bed3dadc44.jpg"
+                        alt="Paragliding">
+                    <h3> Paragliding</h3>
+                    <p>
+                        This is one of the most thrilling adventure activities in Solang Valley that make you feel alive. It makes you feel like a carefree bird who has the freedom to fly anywhere with the help of its wings. Soak in the fresh air with this adventurous sport and wander around the mystical mountains. There is also a training institute in Himachal Pradesh, namely Himachal Aero Institute, situated in Bilaspur that offers you the right training to start your paragliding career. The state has plenty of popular sites where you can try paragliding. Its breathtaking scenes are going to offer you a lifetime experience. This sport, too, is not for the faint hearted and has expert guidance who guide you through the entire experience.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="destinations">
+            <h2>Popular cities</h2>
+            <div class="destination-grid">
+                <div class="destination-item">
+                    <img src="https://images.pexels.com/photos/3574440/pexels-photo-3574440.jpeg?cs=srgb&dl=pexels-shalender-kumar-3574440.jpg&fm=jpg"
+                        alt="shimla">
+                    <h3>Shimla</h3>
+                    <p>
+                        Shimla also known as Simla, the official name until 1972 is the capital and the largest city of the northern Indian state of Himachal Pradesh. In 1864, Shimla was declared as the summer capital of British India. After independence, the city became the capital of East Punjab and was later made the capital city of Himachal Pradesh. It is the principal commercial, cultural and educational centre of the state.
+                    </p>
+
+                </div>
+
+                <div class="destination-item">
+                    <img src="https://t4.ftcdn.net/jpg/03/32/76/45/360_F_332764574_mlV8E1dg3kUFYCWmmtJWPiMuHVi5CJXo.jpg"
+                        alt="Dharamshala">
+                    <h3>Dharamshala </h3>
+                    <p>
+                        Dharamshala is the winter capital of Himachal Pradesh, India, as well as the site of the Tibetan Government-in-exile. It serves as administrative headquarters of the Kangra district after being relocated from Kangra, a city located 18 km (11 mi) away from Dharamshala, in 1855.The city has been selected as one of a hundred in India to be developed as a smart city under Indian Prime Minister Narendra Modi's flagship "Smart Cities Mission".
+                    </p>
+
+                </div>
+
+                <div class="destination-item">
+                    <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/12/cover-for-hotels-in-solan_10th-dec.jpg" alt="Solan">
+                    <h3>Solan</h3>
+                    <p>
+                        Solan is a city in the Indian state of Himachal Pradesh and the district headquarters of Solan district. It is located 45.5 kilometres (28 mi) south of the state capital, Shimla. Solan has an average elevation of 1,550 metres (5,090 ft).The city is situated between Chandigarh (joint capital of Punjab and Haryana) and Shimla (state capital) on the Kalka-Shimla National Highway-5. The narrow-gauge Kalka-Shimla railway passes through Solan. Located on the Punjab-Himachal Border, Solan is nestled in the Shivalik hills of the Himalayas.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="destinations">
+
+            <div class="destination-grid">
+                <div class="destination-item">
+                    <img src="https://thumbs.dreamstime.com/b/editorial-palampur-himachal-pradesh-india-nov-th-local-bus-stop-pretty-hill-station-himachal-well-connected-to-62402706.jpg"
+                        alt="palampur">
+                    <h3>Palampur</h3>
+                    <p>
+                        Palampur is a hill station and a municipal corporation situated in the Kangra District in the Indian state of Himachal Pradesh. It is surrounded by pine forests and flanked by the Dhauladhar ranges. There are numerous streams flowing from the mountains to the plains, from Palampur. The combination of greenery, snowclad mountains and water gives Palampur a distinctive look.
+                    </p>
+
+                </div>
+
+                <div class="destination-item">
+                    <img src="https://media.istockphoto.com/id/1400571914/photo/kullu-city-hd-view-himachal-pradesh-india-kullu-manali-bus-stand.jpg?s=170667a&w=0&k=20&c=YrVBL8du-F_fVozP_5WjCMvD_rC0JWP_h4EGCLcKrjA="
+                        alt="kullu">
+                    <h3>Kullu</h3>
+                    <p>
+                        Kullu is a municipal council town that serves as the administrative headquarters of the Kullu district of the Indian state of Himachal Pradesh. It is located on the banks of the Beas River in the Kullu Valley about 10 kilometres (6.2 mi) north of the airport at Bhuntar, Kullu.Kullu Valley is a broad open valley formed by the Beas River between Manali and Larji. 
+                    </p>
+
+                </div>
+
+                <div class="destination-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Manali_City.jpg" alt="Manali">
+                    <h3>Manali</h3>
+                    <p>
+                        Manali is a town, near Kullu town in Kullu district in the Indian state of Himachal Pradesh.It is situated in the northern end of the Kullu Valley, formed by the Beas River. The town is located in the Kullu district, approximately 270 kilometres (170 mi) north of the state capital of Shimla and 544 kilometres (338 mi) northeast of the national capital of New Delhi. 
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="destinations">
+            <div class="destination-grid">
+                <div class="destination-item">
+                    <img src="https://assets-news.housing.com/news/wp-content/uploads/2022/09/12010206/DALHOUSIE-FEATURE-compressed.jpg" alt="Dalhousie ">
+                    <h3>Dalhousie </h3>
+                    <p>
+                        Named after 19th-century British Governor-General Lord Dalhousie, this enchanting hill town is among the most popular tourist destinations in Himachal Pradesh. Snuggled in the outer slopes of the Dhauladhar range, Dalhousie stretches over five distinct hills, namely Balun, Kathlog, Petreyn, Tehra, and Bakrota, with heights ranging between 1,525 and 2,378 m above sea level. 
+                    </p>
+
+                </div>
+
+                <div class="destination-item">
+                    <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1652508603.webp" alt="Mandi">
+                    <h3>Mandi</h3>
+                    <p>
+                        Mandi (formerly known as Mandav Nagar) is a major city and a municipal corporation in Mandi District in the Indian state of Himachal Pradesh. It is situated 145 kilometres (90 mi) north of state capital.Lord Shiva as the main deity of Bhootnath, Trilokinath, Panchvaktra and other important temples has ordained Mandi as the 'Varanasi of the Hills' as 'Choti Kashi'
+                    </p>
+
+                </div>
+
+                <div class="destination-item">
+                    <img src="https://www.holidify.com/images/bgImages/KUFRI.jpg"
+                        alt="Kurfi">
+                    <h3>Kurfi</h3>
+                    <p>
+                        Located in the southern part of the state in the arms of the Himalayas, Kufri has been blessed with a pleasant climate, incredible landscape beauty, and abundant tranquility. The tourists who visit Shimla remember to come here. Visited all around the year, this place also offers opportunities for many adventure activities. 
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="about">
+            
+            <div class="aboutweb">
+                <h3>About Website</h3>
+                <p>
+                    In conclusion, these are the top 9 Famous cities in Himachal Pradeesh. These cities offer excellent opportunities for business,
+                    education, healthcare, and tourism. And i gave the information about Adventure Sports In Himachal Pradesh as well as i gave top Hotels Details.If you're planning to visit Himachal pradesh,be sure to explore these
+                    cities and experience their unique culture and heritage.<p>In this project I used HTML and CSS. </p>
+                    <p>In this project i decsribe the all top tourist place in the Himachal Pradesh.</p>
+                </p>
+            </div>
+            <div class="aboutme">
+                <h3>About Me</h3>
+                <h2>Abhishek Kumar</h2><br>
+
+                <p>
+                    Hello, I am Abhishek Kumar. Currently I am pursuing MCA at KL University .</p>
+                <p>Email:-2201600025mca@gmail.com</p>
+                
+            </div>
+
+            <br><br><div class="thank">
+                <img src="https://manlywestgoldrush-manlywestgamin.weebly.com/uploads/2/7/0/2/27020596/8037047_orig.jpg" alt="Thank you for visiting">
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
